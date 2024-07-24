@@ -88,41 +88,13 @@
 			{% endfor %}
 		</div>
 		<div class="hero-slider owl-carousel">
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/15.jpg">
+			{% for thirdrow in thirdrows %}
+			<div class="hero-item portfolio-item set-bg" data-setbg="{{thirdrow.image.url}}">
 				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
+					<h2>{{thirdrow.text}}</h2>
 				</a>
 			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/16.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/17.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/18.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/19.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/20.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
-			<div class="hero-item portfolio-item set-bg" data-setbg="img/portfolio/21.jpg">
-				<a href="portfolio.html" class="hero-link">
-					<h2>Take a look at my Portfolio</h2>
-				</a>
-			</div>
+			{% endfor %}
 		</div>
 		<div class="hero-social-links">
 			<a href=""><i class="fa fa-pinterest"></i></a>
